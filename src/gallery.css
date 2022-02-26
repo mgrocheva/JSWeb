@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(153, 131, 131);
+}
+
+body {
+    margin: 20px;
+}
+
+.img {
+    height: 500px;
+    width: 30%;
+    border: 2px solid black;
+    display:block;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .image {
+        width: 100%;
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.myImages {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, 
+.next:hover {
+    background-color: black;
+}
+
+.numberImage {
+    color: white;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    left:540px;
+}
+
+.row {
+    border: 3px solid rgb(211, 211, 175);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    max-height: auto;
+    width: 8.33%;
+    border: 2px solid black;
+}
+
+.demo {
+    opacity: 0.5;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+

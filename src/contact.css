@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(153, 131, 131);
+}
+
+body {
+    margin: 50px;
+}
+
+div, p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#email, #mobile {
+    color: rgb(19, 19, 59);
+    text-decoration: underline;
+}
+
+#email,
+#mobile:hover {
+    cursor: pointer;
+}
+
+#mobile_contact,
+#email_contact {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div:hover p#mobile_contact {
+    display: block;
+}
+
+div:hover p#email_contact {
+    display: block;
+}
+
+
